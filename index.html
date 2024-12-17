@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="flexbox/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700;800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="flexbox/main.css">
+    <title>Dj Proggeto</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+
+
+<body>
+    <header class="header">
+        <div class="container pt-1 pt-md-4 header__top">
+            <nav class="navbar navbar-expand-lg js-navbar">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler js-custom-toggler custom-toggler collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarAltMarkup"
+                    aria-expanded="false" aria-label="Toggle Navigator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end js-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center">
+                        <a class="nav-link active" href="#">WP FESTIVAL</a>
+                        <a class="nav-link" href="#">DJS</a>
+                        <a class="nav-link" href="#">CONTACTO</a>
+                        <a class="nav-link" href="#">BLOG</a>
+                    </div>
+                </div>
+
+            </nav>
+
+            <div class="container header__bottom">
+                <ul class="list-inline d-flex header__meta
+                ">
+                    <li>
+                        <img src="img/CLOCK_RED.svg" alt="Icon Date">
+                        <span>21 Sept 2024</span>
+                    </li>
+                    <li>
+                        <img src="img/TICKETS_RED.svg" alt="Icon Date">
+                        <span>21 Djs</span>
+                    </li>
+                    <li>
+                        <img src="img/HEAD_RED.svg" alt="Icon Date">
+                        <span>300 Entradas</span>
+                    </li>
+                </ul>
+                <div class="header__information">
+                    <h2 class="mb-0 mt-4"><strong>WP</strong>Festival Music<strong>Lima</strong>2025</h2>
+                    <p class="d-md-none"><strong>Lima WP Festival Music</strong>es un Evento de música electrónica con
+                        Djs que
+                        están dentro del top 20 en el mundo.
+                    </p>
+                    <div class="header__btn">
+                        <a href="#" class="btn btn-primary">Comprar tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.js-custom-toggler').click(function () {
+                $('.js-navbar').toggleClass('relative');
+                $('.js-collapse').addClass('navbar--absolute');
+            })
+        })
+    </script>
+
+</body>
+
+</html>
