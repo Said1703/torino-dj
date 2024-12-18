@@ -2,7 +2,7 @@
   /*colors*/
   --main-bg-color: #fc0f4e;
   --main-bg-color-hover: #e35a78;
-  --secondary-color: #060f20;
+  --secondary-color: #0148cc;
   --blue-color: #53c7f0;
   --white-color: #ffff;
   --black-color: #00000000;
@@ -48,6 +48,41 @@ html {
   }
 }
 
+.presentations {
+  background: url(../img/presentacion-background.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+  padding-bottom: var(--spanding-section);
+  padding-top: var(--spanding-section);
+}
+
+.presentations p {
+  color: var(--secondary-color);
+}
+
+.presentations__details{
+background-color:rgba(0,0,0,0.6);
+padding-top: 0.5rem;
+padding-bottom:0.5rem;
+}
+
+.presentations__details:hover{
+  background-color: var(--main-bg-color);
+}
+
+.presentations__details:hover a{
+  border-color: (--white-color);
+  
+}
+
+.presentations__details--title{
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: calc(var(--letter-spacing) + 4px);
+  font-weight: 500;
+}
+
 .header__bottom {
   color: var(--white-color);
   display: flex;
@@ -56,7 +91,7 @@ html {
   height: calc(100% - 150px);
   padding: 1.5rem;
   font-family: var(--secondary-font-family);
-  
+
 }
 
 @media screen and (min-width:768px) {
