@@ -2,8 +2,9 @@
   /*colors*/
   --main-bg-color: #fc0f4e;
   --main-bg-color-hover: #e35a78;
-  --secondary-color: #0148cc;
+  --secondary-color: #012361;
   --blue-color: #53c7f0;
+  --blueDark-color:#000212;
   --white-color: #ffff;
   --black-color: #00000000;
 
@@ -59,7 +60,27 @@ html {
 
 .presentations p {
   color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 660px;
+  text-align: center;
 }
+
+@media screen and (min-width:768px) {
+  .presentations p {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  
+}
+
+.presentations__details {
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 
 .presentations__details{
 background-color:rgba(0,0,0,0.6);
@@ -118,6 +139,28 @@ padding-bottom:0.5rem;
     text-align: left;
     font-size: 4rem;
   }
+}
+
+.numberEvents {
+  background-color: var(--blueDark-color);
+  padding-top: var(--spanding-section);
+  padding-bottom: var(--padding-section);
+  color:white
+
+}
+
+.numberEvents h5 {
+  color:var(--secondary-color);
+  font-family: var(--secondary-font-family);
+  font: size 1.2rem;
+}
+
+.numberEvents h6{
+  font-size: 3.125rem;
+  font-family: var(--main-font-family);
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom:0.5rem;
 }
 
 .header__information strong {
@@ -233,4 +276,25 @@ padding-bottom:0.5rem;
   .navbar-brand {
     max-width: 272px;
   }
+}
+
+.presentations__details--title{
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  font-size:1.3rem;
+}
+
+.title{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.title:after{
+  max-width: 170px;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  height: 3px;
+  display: block;
 }
