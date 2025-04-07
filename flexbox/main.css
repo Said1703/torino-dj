@@ -143,10 +143,11 @@ padding-bottom:0.5rem;
 
 .numberEvents {
   background-color: var(--blueDark-color);
-  padding-top: var(--spanding-section);
-  padding-bottom: var(--padding-section);
-  color:white
+  color:white;
+}
 
+.numberEvents__item{
+  justify-content: center;
 }
 
 .numberEvents h5 {
@@ -182,6 +183,38 @@ padding-bottom:0.5rem;
 .header__meta li {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.djs{
+  position:relative;
+}
+.djs__gallery {
+
+}
+
+.djs__gallery li{
+  margin-right:30px;
+} 
+.djs__gallery li:nth-child(3+n){
+  margin-right:0;
+}
+
+
+.djs__name{
+  font-family:var(--secondary-font-family);
+  font-weight: 400;
+  color:var(--blueDark-color);
+  letter-spacing: var(--letter-spacing);
+  font: size 1.8rem;
+  margin: top 0.5rem;
+  margin-bottom:0;
+}
+
+.djs__type{
+  font-family:var(--secondary-font-family);
+  font-weight:300;
+  font-size:1rem;
+  color:var(--gray-color);
 }
 
 .custom-toggler {
@@ -286,8 +319,8 @@ padding-bottom:0.5rem;
 
 .title{
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.8rem;
+  font-weight: 700;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
