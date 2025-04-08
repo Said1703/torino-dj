@@ -4,7 +4,7 @@
   --main-bg-color-hover: #e35a78;
   --secondary-color: #012361;
   --blue-color: #53c7f0;
-  --blueDark-color:#000212;
+  --blueDark-color:#010522;
   --white-color: #ffff;
   --black-color: #00000000;
 
@@ -47,6 +47,24 @@ html {
   .header__btn {
     text-align: left;
   }
+}
+
+.tickets{
+  background-color: var(--blueDark-color);
+  color:var(--white-color);
+}
+
+.tickets__price{
+  background-color: #24243c;
+  padding: 2rem;
+  margin: 2rem;
+  transition:all .3s ease-in-out;
+} 
+.tickets__price:hover{
+  background-color:var(--blueDark-color);
+  border:1px dashed var(--main-bg-color);
+  box-shadow: 0px 0px 20px var(--main-bg-color);
+  transform: scale(1.05);
 }
 
 .presentations {
