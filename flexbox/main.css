@@ -7,6 +7,8 @@
   --blueDark-color:#010522;
   --white-color: #ffff;
   --black-color: #00000000;
+  --purple-color: #a500ff;
+  --pink-color: #ff0080;
 
   /*fonts*/
   --main-font-family: "Saira", sans-serif;
@@ -59,6 +61,7 @@ html {
   padding: 2rem;
   margin: 2rem;
   transition:all .3s ease-in-out;
+  border-radius: 30px;
 } 
 .tickets__price:hover{
   background-color:var(--blueDark-color);
@@ -91,6 +94,21 @@ html {
     text-align: left;
   }
   
+}
+
+.text--red {
+  color:var(--main-bg-color);
+  font-weight: bold;
+}
+
+.text--pink{
+  color:var(--pink-color);
+  font-weight: bold;
+}
+
+.text--purple{
+  color:var(--purple-color);
+  font-weight: bold;
 }
 
 .presentations__details {
