@@ -313,6 +313,17 @@ padding-bottom:0.5rem;
   height: 100vh;
 }
 
+.sponsors{
+background-image: url("../img/patrocinadores_background.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center center;
+width: 100%;
+height: auto;
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+
 .nav-link {
   color: var(--white-color);
   text-transform: uppercase;
