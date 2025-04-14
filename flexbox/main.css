@@ -39,6 +39,32 @@ html {
   border-color: var(--main-bg-color-hover);
 }
 
+.footer{
+  background-color: var(--blueDark-color);
+  color: var(--white-color);
+  overflow:hidden;
+  text-align:center;
+  
+}
+
+@media screen and (min-width:768px) {
+  .footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.footer__information{
+  margin-left:auto;
+  margin-right:auto;
+  padding-bottom:2rem;
+}
+.footer__list a{
+  text-decoration: none;
+  color: var(--main-bg-color);
+  letter-spacing:var(--letter-spacing);
+}
+
 .header__btn {
   display: inline-block;
   width: 100%;
@@ -423,8 +449,27 @@ html {
   height: 100%;
 }
 
+.news__right .news__item:nth-child(1){
+margin-bottom: 5rem;
+}
+
 .news__item figcaption {
   color: var(--main-bg-color);
   font-family: var(--secondary-font-family);
   margin-top: 0.5rem;
+}
+
+.news__item a{
+  color: var(--white-color);
+  text-decoration:none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.2;
+}
+
+.news__item p{
+  color:var(--blue-color);
+  font-weight: 300;
+
 }
