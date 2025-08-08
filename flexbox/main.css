@@ -287,6 +287,36 @@ html {
   position: relative;
 }
 
+.djs__centerMobile {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width:768px) {
+  .djs__centerMobile {
+    max-width: 100%;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+}
+
+.djs__name {
+  font-family: var(--secondary-font-family);
+  color: var(--black-color);
+  font-size: 1.8rem;
+  font-weight: 400 ;
+  margin-bottom: 0;
+}
+
+.djs__type {
+  font-family: var(--secondary-font-family);
+  font-weight: 300;
+  color:var(--gray-color);
+  font-size: 0.8rem;
+}
+
 
 
 .djs__gallery li {
@@ -443,7 +473,7 @@ html {
   color: var(--white-color);
   padding-top: 5rem;
   padding-bottom: 5rem;
-  
+
   text-align: center;
 }
 
@@ -500,6 +530,33 @@ html {
   background-color: var(--main-bg-color);
   height: 3px;
   display: block;
+}
+
+.modal--djs{
+
+}
+
+@media screen and (min-width:768px) {
+  .modal--djs .modal-dialog {
+    max-width: 95%;
+  }
+  
+}
+
+@media screen and (min-width:1200px) {
+  .modal--djs .modal-dialog {
+    max-width: 70%;
+  }
+  
+}
+
+.modal-content {
+  background-color: var(--blueDark-color);
+  color: var(--white-color);
+  font-family: var(--secondary-font-family);
+  font-weight: 300;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
 }
 
 .news {
