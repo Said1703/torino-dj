@@ -66,6 +66,17 @@ html {
   letter-spacing: var(--letter-spacing);
 }
 
+.boxImage{
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(to left, var(--main-bg-color), var(--main-bg-color-hover)) 1;
+  border-image-slice:1;
+}
+
+
+.boxImage img{
+  transform: translate(20px, 20px);
+}
 
 .tickets {
   background-color: var(--blueDark-color);
@@ -306,14 +317,14 @@ html {
   font-family: var(--secondary-font-family);
   color: var(--black-color);
   font-size: 1.8rem;
-  font-weight: 400 ;
+  font-weight: 400;
   margin-bottom: 0;
 }
 
 .djs__type {
   font-family: var(--secondary-font-family);
   font-weight: 300;
-  color:var(--gray-color);
+  color: var(--gray-color);
   font-size: 0.8rem;
 }
 
@@ -532,22 +543,20 @@ html {
   display: block;
 }
 
-.modal--djs{
-
-}
+.modal--djs {}
 
 @media screen and (min-width:768px) {
   .modal--djs .modal-dialog {
     max-width: 95%;
   }
-  
+
 }
 
 @media screen and (min-width:1200px) {
   .modal--djs .modal-dialog {
     max-width: 70%;
   }
-  
+
 }
 
 .modal-content {
@@ -590,5 +599,36 @@ html {
 .news__item p {
   color: var(--blue-color);
   font-weight: 300;
+
+}
+
+.instagramBox {
+  background-color: var(--main-bg-color);
+  color: white;
+  padding: 1rem;
+  font-family: var(--main-font-family);
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+
+}
+
+.instagramBox span:first-child {
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: initial;
+}
+
+@media screen and (min-width:768px) {
+  .instagramBox {
+    position: absolute;
+    left: 25%;
+    top: 38%;
+    padding: 2.5rem;
+  }
+
+  .instagramBox span:first-child{
+    font-size: 3rem;
+  }
 
 }
