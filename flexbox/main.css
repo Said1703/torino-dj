@@ -39,6 +39,35 @@ html {
   border-color: var(--main-bg-color-hover);
 }
 
+.blog__container {
+  margin-bottom: 4rem;
+}
+
+.blog__items {
+  margin-bottom: 1rem;
+}
+
+.blog__title a{
+color: var(--main-bg-color);
+text-decoration: none;
+display: block;
+}
+
+
+.blog__share img, strong {
+  text-align: center;
+  display: block;
+  height: auto;
+}
+
+.blog__icons--custom {
+  color: #fc0f4e;
+}
+
+.blog__date, .blog__icons {
+  margin-bottom: 1rem;
+}
+
 .footer {
   background-color: var(--blueDark-color);
   color: var(--white-color);
